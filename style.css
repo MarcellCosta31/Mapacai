@@ -1,0 +1,16 @@
+body{
+    background: #3C096C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    color: white;
+    text-align: center;
+    position: relative;
+    width: 120px;
+    height: 30px;
+    padding: 20px;
+    background: #f4a261;
+    border-radius: 20px;
+}

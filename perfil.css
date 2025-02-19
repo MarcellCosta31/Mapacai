@@ -115,14 +115,15 @@ p{
   margin: 3px;
 }
 .card{
-  margin-top: 20px;
+  margin-top: 10px;
+  width: 100%;
   text-align: center;
 }
 .cards{
   position: relative;
   margin: 20xp;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 10px;
   width: 100px;
   padding: 20px;

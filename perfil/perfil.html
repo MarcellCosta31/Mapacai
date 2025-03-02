@@ -27,33 +27,33 @@
   </header>
   <main>
     <div class="card">
-    <img class="cards" src="pagina_inicial/silhueta-de-formato-simples-de-coracao.png" alt="">
+    <img class="cards" src="imagens/silhueta-de-formato-simples-de-coracao.png" alt="">
     
-    <img class="cards" src="pagina_inicial/carrinho-de-compras-de-design-xadrez.png" alt="">
+    <img class="cards" src="imagens/carrinho-de-compras-de-design-xadrez.png" alt="">
 
-    <img class="cards" src="pagina_inicial/botao-de-notificacoes.png" alt="">
+    <img class="cards" src="imagens/botao-de-notificacoes.png" alt="">
     </div>
   </main>
   <div class="navigation">
         <ul>
           <li class="list">
-            <a href="index.html">
-              <span class="icon">
+            <button onclick="entrar()">
+              <span class="icon" >
                 <ion-icon name="home-outline"></ion-icon>
               </span>
               <span class="text">Página Inicial</span>
-            </a>
+            </button>
           </li>
           <li class="list">
-            <a href="#">
+            <button>
               <span class="icon">
                 <ion-icon name="navigate-circle-outline"></ion-icon>
               </span>
               <span class="text">Perto</span>
-            </a>
+            </button>
           </li>
           <li class="list active">
-            <a href="#">
+            <button>
               <span class="icon">
                 <ion-icon name="person-outline"></ion-icon>
               </span>
@@ -66,5 +66,10 @@
   <script src="perfil.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+     function entrar(){
+       window.location.href = "/pagina_inicial/pagina_inicial.html";
+}
+  </script>
 </body>
 </html>

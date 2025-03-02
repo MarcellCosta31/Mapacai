@@ -1,0 +1,51 @@
+/* Estiliza a Hotbar */
+.hotbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 10;
+}
+
+.hotbar button {
+    background: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hotbar button:hover {
+    background: #777;
+}
+
+/* Container das Sections (para permitir rolagem horizontal) */
+.sections-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth; /* Faz a rolagem ser suave */
+    width: 100vw;
+    height: 100vh;
+    white-space: nowrap; /* Impede quebra de linha */
+}
+
+/* Estiliza as Seções */
+section {
+    min-width: 100vw; /* Cada seção ocupa 100% da largura da tela */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+}
+
+/* Diferencia cada seção */
+#sec1 { background: #ff5733; }
+#sec2 { background: #33ff57; }
+#sec3 { background: #3357ff; }

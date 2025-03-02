@@ -18,8 +18,10 @@ body {
   border-radius: 50%;
   width: 100px;
 }
-a{
+button{
   text-decoration: none;
+  background-color: transparent;
+  border: transparent;
 }
 
 .btn{
@@ -32,7 +34,7 @@ a{
   text-align: center;
   background-position: center;
   background-size: contain;
-  background-image: url(perfil/lapis.png);
+  background-image: url(imagens/lapis.png);
   background-color: #f4a261;
   padding: 7px;
 }
@@ -164,7 +166,7 @@ p{
   padding-left: 26px;
   z-index: 1;
 }
-.navigation ul li a {
+.navigation ul li button {
   position: relative;
   display: flex;
   justify-content: center;
@@ -174,7 +176,7 @@ p{
   text-align: center;
   font-weight: 500;
 }
-.navigation ul li a .icon {
+.navigation ul li button .icon {
   position: relative;
   display: block;
   line-height: 75px;
@@ -183,10 +185,10 @@ p{
   transition: 0.5s;
   color: black;
 }
-.navigation ul li.active a .icon {
+.navigation ul li.active button .icon {
   transform: translateY(-32px);
 }
-.navigation ul li a .text {
+.navigation ul li button .text {
   position: absolute;
   color: black;
   font-weight: 400;
@@ -196,7 +198,7 @@ p{
   opacity: 0;
   transform: translateY(20px);
 }
-.navigation ul li.active a .text {
+.navigation ul li.active button .text {
   opacity: 1;
   transform: translateY(10px);
 }

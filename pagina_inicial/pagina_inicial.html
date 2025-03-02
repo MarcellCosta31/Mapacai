@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="pagina_inicial.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Página Inicial</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar...">
+            <button class="search-button">🔍</button>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="card-container">
+            <div class="card">
+                <img src="imagens/Empresa Teste.jpg" alt="Banner da loja" class="card-banner">
+                <div class="card-content">
+                    <h2 class="card-title">Nome da Batedeira</h2>
+                    <p class="card-address">Endereço</p>
+                    <p class="card-info">Litros Disponíveis</p>
+                    <div class="liters">
+                        <button class="liter">5,00</button>
+                        <button class="liter">10,00</button>
+                        <button class="liter">15,00</button>
+                        <button class="liter">20,00</button>
+                    </div>
+                    <button class="add-button">+</button>
+                </div>
+                
+                <img class="favorite-button" src="pagina_inicial/silhueta-de-formato-simples-de-coracao.png" alt="">
+            </div>
+            <div class="card">
+                <img src="imagens/Empresa Teste.jpg" alt="Banner da loja" class="card-banner">
+                <div class="card-content">
+                    <h2 class="card-title">Nome da Batedeira</h2>
+                    <p class="card-address">Endereço</p>
+                    <p class="card-info">Litros Disponíveis</p>
+                    <div class="liters">
+                        <button class="liter">5,00</button>
+                        <button class="liter">10,00</button>
+                        <button class="liter">15,00</button>
+                        <button class="liter">20,00</button>
+                    </div>
+                    <button class="add-button">+</button>
+                </div>
+                
+                <img class="favorite-button" src="pagina_inicial/silhueta-de-formato-simples-de-coracao.png" alt="">
+            </div>
+            <div class="card">
+              <img src="imagens/Empresa Teste.jpg" alt="Banner da loja" class="card-banner">
+              <div class="card-content">
+                  <h2 class="card-title">Nome da Batedeira</h2>
+                  <p class="card-address">Endereço</p>
+                  <p class="card-info">Litros Disponíveis</p>
+                  <div class="liters">
+                      <button class="liter">5,00</button>
+                      <button class="liter">10,00</button>
+                      <button class="liter">15,00</button>
+                      <button class="liter">20,00</button>
+                  </div>
+                  <button class="add-button">+</button>
+              </div>
+              
+              <img class="favorite-button" src="pagina_inicial/silhueta-de-formato-simples-de-coracao.png" alt="">
+          </div>
+            
+            
+            
+        </div>
+    </main>
+    <div class="vacuo">
+      
+    </div>
+    <div class="navigation">
+        <ul>
+          <li class="list active">
+            <button>
+              <span class="icon">
+                <ion-icon name="home-outline"></ion-icon>
+              </span>
+              <span class="text">Página Inicial</span>
+            </button>
+          </li>
+          <li class="list">
+            <button>
+              <span class="icon">
+                <ion-icon name="navigate-circle-outline"></ion-icon>
+              </span>
+              <span class="text">Perto</span>
+            </button>
+          </li>
+          <li class="list">
+            <button onclick="entrar()">
+              <span class="icon">
+                <ion-icon name="person-outline"></ion-icon>
+              </span>
+              <span class="text">Perfil</span>
+            </button>
+          </li> 
+          <div class="indicator"></div>
+        </ul>
+      </div>
+      
+      <script src="inicial.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script>
+        function entrar(){
+          window.location.href = "/perfil/perfil.html";
+   }
+     </script>
+    </body>
+</html>

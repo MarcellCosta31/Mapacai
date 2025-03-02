@@ -1,113 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
-    <link rel="stylesheet" href="inicial.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <header class="header">
-        <h1>Página Inicial</h1>
-        <div class="search-bar">
-            <input type="text" placeholder="Pesquisar...">
-            <button class="search-button">🔍</button>
-        </div>
+    <header>
+        <h1>Entrar</h1>
+        <p id="cabeça">Faça login para continuar. </p>
     </header>
-
-    <main class="main">
-        <div class="card-container">
-            <div class="card">
-                <img src="pagina_inicial/Empresa Teste.jpg" alt="Banner da loja" class="card-banner">
-                <div class="card-content">
-                    <h2 class="card-title">Nome da Batedeira</h2>
-                    <p class="card-address">Endereço</p>
-                    <p class="card-info">Litros Disponíveis</p>
-                    <div class="liters">
-                        <button class="liter">5,00</button>
-                        <button class="liter">10,00</button>
-                        <button class="liter">15,00</button>
-                        <button class="liter">20,00</button>
-                    </div>
-                    <button class="add-button">+</button>
-                </div>
-                
-                <img class="favorite-button" src="pagina_inicial/silhueta-de-formato-simples-de-coracao.png" alt="">
-            </div>
-            <div class="card">
-                <img src="pagina_inicial/Empresa Teste.jpg" alt="Banner da loja" class="card-banner">
-                <div class="card-content">
-                    <h2 class="card-title">Nome da Batedeira</h2>
-                    <p class="card-address">Endereço</p>
-                    <p class="card-info">Litros Disponíveis</p>
-                    <div class="liters">
-                        <button class="liter">5,00</button>
-                        <button class="liter">10,00</button>
-                        <button class="liter">15,00</button>
-                        <button class="liter">20,00</button>
-                    </div>
-                    <button class="add-button">+</button>
-                </div>
-                
-                <img class="favorite-button" src="pagina_inicial/silhueta-de-formato-simples-de-coracao.png" alt="">
-            </div>
-            <div class="card">
-              <img src="pagina_inicial/Empresa Teste.jpg" alt="Banner da loja" class="card-banner">
-              <div class="card-content">
-                  <h2 class="card-title">Nome da Batedeira</h2>
-                  <p class="card-address">Endereço</p>
-                  <p class="card-info">Litros Disponíveis</p>
-                  <div class="liters">
-                      <button class="liter">5,00</button>
-                      <button class="liter">10,00</button>
-                      <button class="liter">15,00</button>
-                      <button class="liter">20,00</button>
-                  </div>
-                  <button class="add-button">+</button>
-              </div>
-              
-              <img class="favorite-button" src="pagina_inicial/silhueta-de-formato-simples-de-coracao.png" alt="">
-          </div>
-            
-            
-            
-        </div>
+    <main>
+        <form>
+            <label class="pmain">Nome</label>
+            <input type="text" onchange="validacaoForm()" id="email">
+            <label class="pmain">Senha</label>
+            <input type="password" onchange="validacaoForm" id="senha">
+            <button type="button" class="recuperarSenha" id="recuperar-senha"  disabled= true>Recuperar Senha</button>
+            <button class="login" type="button" onclick="entrar()">Entrar</button></a>
+        </form>
     </main>
-    <div class="vacuo">
-      
-    </div>
-    <div class="navigation">
-        <ul>
-          <li class="list active">
-            <a href="#">
-              <span class="icon">
-                <ion-icon name="home-outline"></ion-icon>
-              </span>
-              <span class="text">Página Inicial</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="#">
-              <span class="icon">
-                <ion-icon name="navigate-circle-outline"></ion-icon>
-              </span>
-              <span class="text">Perto</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="perfil.html">
-              <span class="icon">
-                <ion-icon name="person-outline"></ion-icon>
-              </span>
-              <span class="text">Perfil</span>
-            </a>
-          </li> 
-          <div class="indicator"></div>
-        </ul>
-      </div>
-      
-      <script src="inicial.js"></script>
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    </body>
+    <footer>
+        <p>E novo? Faça o cadastro <a href="cadastrar.html">aqui</a>.</p>
+    </footer>
+<script>
+    function entrar(){
+       window.location.href = "pagina_inicial/pagina_inicial.html";
+}
+</script>
+    
+</body>
 </html>

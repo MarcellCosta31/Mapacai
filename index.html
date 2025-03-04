@@ -7,28 +7,32 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <header>
-        <h1>Entrar</h1>
-        <p id="cabeça">Faça login para continuar. </p>
-    </header>
-    <main>
-        <form>
-            <label class="pmain">Nome</label>
-            <input type="text" onchange="validacaoForm()" id="email">
-            <label class="pmain">Senha</label>
-            <input type="password" onchange="validacaoForm" id="senha">
-            <button type="button" class="recuperarSenha" id="recuperar-senha"  disabled= true>Recuperar Senha</button>
-            <button class="login" type="button" onclick="entrar()">Entrar</button></a>
-        </form>
-    </main>
-    <footer>
-        <p>E novo? Faça o cadastro <a href="cadastrar.html">aqui</a>.</p>
-    </footer>
-<script>
-    function entrar(){
-       window.location.href = "pagina_inicial/pagina_inicial.html";
-}
-</script>
+    <img src="imagens/tela_login/logo.png" alt="logo">
+    <main class="tela">
+    <div class="container" id="loginContainer">
+        <h2>Login</h2>
+        <input type="email" id="loginEmail" placeholder="E-mail">
+        <span class="error" id="loginEmailError"></span>
+        <input type="password" id="loginPassword" placeholder="Senha">
+        <span class="error" id="loginPasswordError"></span>
+        <button onclick="validateLogin()">Entrar</button>
+        
+        <span class="toggle-link" onclick="toggleForms()">Criar uma conta</span>
+    </div>
     
+    <div class="container hidden" id="signupContainer">
+        <h2>Cadastro</h2>
+        <input type="text" id="signupName" placeholder="Nome">
+        <span class="error" id="signupNameError"></span>
+        <input type="email" id="signupEmail" placeholder="E-mail">
+        <span class="error" id="signupEmailError"></span>
+        <input type="password" id="signupPassword" placeholder="Senha">
+        <span class="error" id="signupPasswordError"></span>
+        <button onclick="validateSignup()">Cadastrar</button>
+        
+        <span class="toggle-link" onclick="toggleForms()">Já tem uma conta? Entrar</span>
+    </div>
+    </main>
+<script src="login.js"></script>
 </body>
 </html>

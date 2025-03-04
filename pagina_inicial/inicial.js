@@ -1,10 +1,9 @@
-const list = document.querySelectorAll(".list");
-function activeLink() {
-list.forEach((item) => item.classList.remove("active"));
-this.classList.add("active");
+function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({
+        behavior: "smooth",
+        inline: "start" // Faz o scroll horizontal funcionar
+    });
 }
-list.forEach((item) => item.addEventListener("click", activeLink));
-
 const inputImagem = document.getElementById("input-imagem");
         const imagemPreview = document.getElementById("imagem-preview");
         const botaoRemover = document.getElementById("remover-imagem");
